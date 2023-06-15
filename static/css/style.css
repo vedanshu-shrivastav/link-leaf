@@ -1,0 +1,85 @@
+:root {
+  --baseBG: #8e75a9;
+  --linkText: #ffffff;
+  --link-box-BG: #6b02aa;
+  --linkBorder: #8e75a9;
+  --headingText: #fff;
+
+  --gradient-color1: #bb4bfd;
+  --gradient-color2: #6b02aa;
+}
+
+body {
+  background: var(--gradient-color1);
+  background: linear-gradient(129deg, var(--gradient-color1) 50%, var(--gradient-color2) 100%);
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  height: 100vh;
+  margin: 0;
+}
+
+/* ================================================= */
+
+.banner {
+  color: var(--headingText);
+}
+
+.link-list {
+  margin-top: 50px;
+}
+
+.link-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  opacity: 1;
+
+  margin-bottom: 10px;
+  background-color: var(--link-box-BG);
+  padding: 5px 15px;
+  border-radius: 5px;
+  width: 300px;
+  height: 50px;
+}
+
+.link-box a {
+  text-decoration: none;
+}
+
+.link-box img {
+  width: 25px;
+  height: 25px;
+}
+
+/* ================================================= */
+
+.link-text {
+  color: var(--linkText);
+  margin: 0;
+  padding: 0;
+}
+
+.copy-btn,
+.goto-btn {
+  background-color: var(--link-box-BG);
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid var(--linkBorder);
+  border-radius: 5px;
+}
+
+.goto-btn {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================================================= */

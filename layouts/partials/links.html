@@ -1,0 +1,21 @@
+<div class="link-list">
+  {{ range .Site.Data.links }}
+  <div class="link-box">
+    <a class="goto-btn" href="{{ .url }}" target="_blank">
+      <h3 class="link-text">{{ .name }}</h3>
+    </a>
+
+    <button class="copy-btn" onclick="copyText('{{ .url }}')">
+      <img src="/icons/copy.png" alt="Copy URL" />
+    </button>
+  </div>
+
+  {{ end }}
+</div>
+
+<script>
+  function copyText(text) {
+    const cb = navigator.clipboard;
+    cb.writeText(text);
+  }
+</script>
