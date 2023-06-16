@@ -13,9 +13,24 @@
   {{ end }}
 </div>
 
-<script>
+<!-- <script>
   function copyText(text) {
     const cb = navigator.clipboard;
     cb.writeText(text);
+  }
+</script> -->
+
+<script>
+  function copyText(text) {
+    const inputElement = document.createElement("input");
+    inputElement.style.opacity = 0;
+    inputElement.value = text;
+    document.body.appendChild(inputElement);
+
+    inputElement.select();
+    inputElement.setSelectionRange(0, 99999); // For mobile devices
+
+    document.execCommand("copy");
+    document.body.removeChild(inputElement);
   }
 </script>
