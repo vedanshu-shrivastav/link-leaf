@@ -27,7 +27,19 @@ body {
 
 .banner {
   color: var(--headingText);
+  text-align: center;
 }
+
+.heading {
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .heading span {
+    display: block;
+  }
+}
+/* ================================================= */
 
 .link-list {
   margin-top: 50px;
