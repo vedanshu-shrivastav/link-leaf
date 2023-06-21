@@ -82,4 +82,14 @@ body {
   justify-content: center;
 }
 
+/* button click effect  */
+.copy-btn {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.05s ease-in-out;
+}
+.copy-btn:active {
+  transform: scale(0.9);
+}
+
 /* ================================================= */
