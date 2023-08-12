@@ -18,5 +18,13 @@
   {
     "name": "Blog",
     "url": "https://chaitanya-varu-blog.netlify.app"
+  },
+  {
+    "name": "Cloud Resume",
+    "url": "https://www.chaitanyavaru.tech"
+  },
+  {
+    "name": "Serverless Resume",
+    "url": "https://serverless-resume.chaitanyavaru.workers.dev"
   }
 ]
