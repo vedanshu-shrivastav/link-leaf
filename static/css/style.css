@@ -25,13 +25,12 @@ body {
 /* ================================================= */
 
 .banner {
-  color: var(--headingText);
+  color: var(--link-box-BG);
   text-align: center;
 }
 
 .heading {
   margin: 0;
-  color: #4d027a;
 }
 
 @media (max-width: 480px) {
